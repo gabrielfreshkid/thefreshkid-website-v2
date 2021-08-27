@@ -1,7 +1,7 @@
 .featureBar {
   background: rgb(238,241,242);
   height: 40px;
-  width: 100vw;
+  width: 100%;
   position: sticky;
   top: 0;
   z-index: 999;
