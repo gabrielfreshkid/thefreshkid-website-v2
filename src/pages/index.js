@@ -8,6 +8,8 @@ import Seo from "../components/seo"
 import Header from "../components/header"
 import FeatureBar from "../components/featureBar"
 import Footer from "../components/footer"
+import ValueProposition from "../components/ValueProposition"
+import index from "./index.css"
 
 const IndexPage = () => (
 
@@ -15,19 +17,14 @@ const IndexPage = () => (
     
     <div className="content-wrap">
 
-    <Header></Header>
-    <FeatureBar></FeatureBar>
+        <Header></Header>
+        <FeatureBar></FeatureBar>
 
-
-    <h1>Feature</h1>
-    <h1>Feature</h1>
-    <h1>Feature</h1>
-    <h1>Feature</h1>
-    <h1>Feature</h1>
-    <h1>Feature</h1>
-    <h1>Feature</h1>
-    <h1>Feature</h1>
-    <h1>Feature</h1>    
+        <div className="heroImage">Hero Image</div>
+        <ValueProposition></ValueProposition>
+        <div className="contentFeature">Content feature 1</div>
+         <div className="contentFeature">Content feature 2</div>
+          <div className="contentFeature">Content feature 3</div>
 
 
         
