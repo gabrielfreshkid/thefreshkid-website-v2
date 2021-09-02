@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import './header.css'
+import './Header.css'
 
 function Header() {
     return(
