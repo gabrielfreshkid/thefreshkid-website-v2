@@ -33,12 +33,14 @@ export default function ContentFeature3() {
 
   return (
     <div className="contentFeature3">
-      <img
+      {/* <img
         className={"contentFeatureImg3"}
         alt={``}
         key={``}
-        src={data.allContentfulFlexStyleBody.edges[2].node.displayBoard.file.url}
-      />
+        src={
+          data.allContentfulFlexStyleBody.edges[2].node.displayBoard.file.url
+        }
+      /> */}
       <img
         className={"contentFeatureImg3"}
         alt={``}
@@ -50,8 +52,6 @@ export default function ContentFeature3() {
       <p>{data.allContentfulFlexStyleBody.edges[0].node.category}</p>
       <p>{data.allContentfulFlexStyleBody.edges[0].node.callToAction}</p>
       <p>{data.allContentfulFlexStyleBody.edges[0].node.bodyText.bodyText}</p>
-
-
     </div>
   )
 

@@ -37,12 +37,6 @@ export default function ContentFeature1() {
         className={"contentFeatureImg1"}
         alt={``}
         key={``}
-        src={data.allContentfulFlexStyleBody.edges[2].node.displayBoard.file.url}
-      />
-      <img
-        className={"contentFeatureImg1"}
-        alt={``}
-        key={``}
         src={data.allContentfulFlexStyleBody.edges[2].node.image.file.url}
       />
       <p>{data.allContentfulFlexStyleBody.edges[2].node.title}</p>
@@ -50,11 +44,8 @@ export default function ContentFeature1() {
       <p>{data.allContentfulFlexStyleBody.edges[2].node.category}</p>
       <p>{data.allContentfulFlexStyleBody.edges[2].node.callToAction}</p>
       <p>{data.allContentfulFlexStyleBody.edges[2].node.bodyText.bodyText}</p>
-
-
     </div>
   )
-
   // return <div className="contentFeature">
   //         {data.allContentfulFlexStyleBody.edges[0].map(({ node }, index) => (
   //           <img

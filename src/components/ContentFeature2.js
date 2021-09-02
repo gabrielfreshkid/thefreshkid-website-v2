@@ -37,12 +37,6 @@ export default function ContentFeature2() {
         className={"contentFeatureImg2"}
         alt={``}
         key={``}
-        src={data.allContentfulFlexStyleBody.edges[2].node.displayBoard.file.url}
-      />
-      <img
-        className={"contentFeatureImg2"}
-        alt={``}
-        key={``}
         src={data.allContentfulFlexStyleBody.edges[1].node.image.file.url}
       />
       <p>{data.allContentfulFlexStyleBody.edges[1].node.title}</p>
