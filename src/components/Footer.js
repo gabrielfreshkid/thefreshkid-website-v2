@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "./footer.css"
+import "./Footer.css"
 import { Link } from "gatsby"
 
 function Footer() {
