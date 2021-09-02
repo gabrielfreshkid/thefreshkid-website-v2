@@ -1,7 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import "./ValueProposition.css"
-import { node } from "prop-types"
 
 export default function ValueProposition() {
   const data = useStaticQuery(graphql`
