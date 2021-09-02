@@ -3,6 +3,7 @@
 	width: 100%;
 	height: 600px;
 	background-color: rgb(255, 200, 211);
+	object-fit: cover;
 
 }
 

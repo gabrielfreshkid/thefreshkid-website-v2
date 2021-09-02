@@ -1,38 +1,71 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Seo from "../components/seo"
 
-import Header from "../components/header"
-import FeatureBar from "../components/featureBar"
-import Footer from "../components/footer"
+import Header from "../components/Header"
+import FeatureBar from "../components/FeatureBar"
+import Footer from "../components/Footer"
 import ValueProposition from "../components/ValueProposition"
 import index from "./index.css"
+import ContentFeature1 from "../components/ContentFeature1"
+import ContentFeature2 from "../components/ContentFeature2"
+import ContentFeature3 from "../components/ContentFeature3"
 
-const IndexPage = () => (
 
-<div className="page-container">
-    
-    <div className="content-wrap">
-
+function IndexPage({ data }) {
+  return (
+    <div className="page-container">
+      <div className="content-wrap">
         <Header></Header>
         <FeatureBar></FeatureBar>
 
-        <div className="heroImage">Hero Image</div>
+        <div className="heroImage">
+          {data.allContentfulHeroImage.edges.map(({ node }, index) => (
+            <img
+              className={"heroImage"}
+              alt={``}
+              key={``}
+              src={node.heroImage.file.url}
+            />
+          ))}
+
+          {/* <StaticImage
+            src="../images/gatsby-astronaut.png"
+            width={300}
+            quality={95}
+            formats={["AUTO", "WEBP", "AVIF"]}
+            alt="A Gatsby astronaut"
+            style={{ marginBottom: `1.45rem` }}
+            /> */}
+        </div>
         <ValueProposition></ValueProposition>
-        <div className="contentFeature">Content feature 1</div>
-         <div className="contentFeature">Content feature 2</div>
-          <div className="contentFeature">Content feature 3</div>
+        <ContentFeature1></ContentFeature1>
+        <ContentFeature2></ContentFeature2>
+        <ContentFeature3></ContentFeature3>
+      </div>
 
-
-        
+      <Footer></Footer>
     </div>
-
-<Footer></Footer>
-
-</div>
-)
+  )
+}
 
 export default IndexPage
+
+export const query = graphql`
+  query MyQuery {
+    allContentfulHeroImage {
+      edges {
+        node {
+          heroImage {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  }
+`

@@ -1,13 +1,38 @@
-import React, {useState} from 'react';
-import './featureBar.css'
+import React, { useState } from "react"
+import "./FeatureBar.css"
+import { graphql, useStaticQuery } from "gatsby"
 
-function FeatureBar() {
-    return(
-        <div>
-            <nav className="featureBar"> 
-            </nav>
+export default function FeatureBar() {
+  const data = useStaticQuery(graphql`
+    query LogoQuery {
+      allContentfulMarqueLogo {
+        edges {
+          node {
+            marqueLogoFile {
+              file {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <div>
+      <nav className="featureBar">
+        <div className="MarqueBox">
+          {data.allContentfulMarqueLogo.edges.map(({ node }, index) => (
+            <img
+              className={"MarqueLogo"}
+              alt={``}
+              key={``}
+              src={node.marqueLogoFile.file.url}
+            />
+          ))}
         </div>
-    )
+      </nav>
+    </div>
+  )
 }
-
-export default FeatureBar;
