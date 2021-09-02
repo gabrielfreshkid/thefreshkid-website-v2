@@ -4,31 +4,37 @@ import { graphql, useStaticQuery } from "gatsby"
 
 export default function ContentFeature2() {
   const data = useStaticQuery(graphql`
-    query ContentFeature2Query {
-      allContentfulFlexStyleBody {
-        edges {
-          node {
-            image {
-              file {
-                url
-              }
-            }
-            title
-            subTitle
-            category
-            callToAction
-            bodyText {
-              bodyText
-            }
-            displayBoard {
-              file {
-                url
-              }
-            }
+query ContentFeature2Query {
+  allContentfulFlexStyleBody {
+    edges {
+      node {
+        image {
+          file {
+            url
+          }
+        }
+        title
+        subTitle
+        category
+        callToAction
+        bodyText {
+          bodyText
+        }
+        displayBoard {
+          file {
+            url
+          }
+        }
+        displayBar {
+          file {
+            url
           }
         }
       }
     }
+  }
+}
+
   `)
 
   return (
@@ -37,13 +43,13 @@ export default function ContentFeature2() {
         className={"contentFeatureImg2"}
         alt={``}
         key={``}
-        src={data.allContentfulFlexStyleBody.edges[1].node.image.file.url}
+        src={data.allContentfulFlexStyleBody.edges[0].node.image.file.url}
       />
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.title}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.subTitle}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.category}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.callToAction}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.bodyText.bodyText}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[0].node.title}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[0].node.subTitle}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[0].node.category}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[0].node.callToAction}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[0].node.bodyText.bodyText}</p>
 
 
     </div>

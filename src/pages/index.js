@@ -7,11 +7,9 @@ import FeatureBar from "../components/FeatureBar"
 import Footer from "../components/Footer"
 import ValueProposition from "../components/ValueProposition"
 
-
 import ContentFeature1 from "../components/ContentFeature1"
 import ContentFeature2 from "../components/ContentFeature2"
 import ContentFeature3 from "../components/ContentFeature3"
-
 
 function IndexPage({ data }) {
   return (
@@ -29,12 +27,12 @@ function IndexPage({ data }) {
               src={node.heroImage.file.url}
             />
           ))}
-          
         </div>
         <ValueProposition></ValueProposition>
-        <ContentFeature1></ContentFeature1>
-        <ContentFeature2></ContentFeature2>
+
         <ContentFeature3></ContentFeature3>
+        <ContentFeature2></ContentFeature2>
+        <ContentFeature1></ContentFeature1>
       </div>
 
       <Footer></Footer>

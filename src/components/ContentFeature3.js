@@ -25,6 +25,11 @@ export default function ContentFeature3() {
                 url
               }
             }
+            displayBar {
+              file {
+                url
+              }
+            }
           }
         }
       }
@@ -33,25 +38,32 @@ export default function ContentFeature3() {
 
   return (
     <div className="contentFeature3">
-      {/* <img
-        className={"contentFeatureImg3"}
-        alt={``}
-        key={``}
-        src={
-          data.allContentfulFlexStyleBody.edges[2].node.displayBoard.file.url
-        }
-      /> */}
       <img
         className={"contentFeatureImg3"}
         alt={``}
         key={``}
-        src={data.allContentfulFlexStyleBody.edges[0].node.image.file.url}
+        src={data.allContentfulFlexStyleBody.edges[1].node.image.file.url}
       />
-      <p>{data.allContentfulFlexStyleBody.edges[0].node.title}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[0].node.subTitle}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[0].node.category}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[0].node.callToAction}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[0].node.bodyText.bodyText}</p>
+
+      <img
+        className={"displayBoard3"}
+        alt={``}
+        key={``}
+        src={data.allContentfulFlexStyleBody.edges[1].node.displayBoard.file.url}
+      />
+
+      <img
+        className={"displayBar3"}
+        alt={``}
+        key={``}
+        src={data.allContentfulFlexStyleBody.edges[1].node.displayBar.file.url}
+      />
+
+      <p>{data.allContentfulFlexStyleBody.edges[1].node.title}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[1].node.subTitle}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[1].node.category}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[1].node.callToAction}</p>
+      <p>{data.allContentfulFlexStyleBody.edges[1].node.bodyText.bodyText}</p>
     </div>
   )
 

@@ -25,6 +25,11 @@ export default function ContentFeature1() {
                 url
               }
             }
+            displayBar {
+              file {
+                url
+              }
+            }
           }
         }
       }
@@ -39,6 +44,23 @@ export default function ContentFeature1() {
         key={``}
         src={data.allContentfulFlexStyleBody.edges[2].node.image.file.url}
       />
+
+      <img
+        className={"displayBoard1"}
+        alt={``}
+        key={``}
+        src={
+          data.allContentfulFlexStyleBody.edges[2].node.displayBoard.file.url
+        }
+      />
+
+      <img
+        className={"displayBar1"}
+        alt={``}
+        key={``}
+        src={data.allContentfulFlexStyleBody.edges[2].node.displayBar.file.url}
+      />
+
       <p>{data.allContentfulFlexStyleBody.edges[2].node.title}</p>
       <p>{data.allContentfulFlexStyleBody.edges[2].node.subTitle}</p>
       <p>{data.allContentfulFlexStyleBody.edges[2].node.category}</p>
