@@ -36,21 +36,21 @@ function IndexPage({ data }) {
 
 export default IndexPage
 
-export const query = graphql`
-  query MyQuery {
-    allContentfulHeroImage {
-      edges {
-        node {
-          heroImage {
-            file {
-              url
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql`
+//   query MyQuery {
+//     allContentfulHeroImage {
+//       edges {
+//         node {
+//           heroImage {
+//             file {
+//               url
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
     //  {data.allContentfulHeroImage.edges.map(({ node }, index) => (
     //         <img

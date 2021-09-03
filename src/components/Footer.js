@@ -168,12 +168,12 @@ export default function Footer() {
                 />
               </div> */}
 
-              <img
+              {/* <img
                 className={"footer-Photo"}
                 alt={``}
                 key={``}
                 src={data.allContentfulAsset.edges[25].node.file.url}
-              />
+              /> */}
               <div className="footer-RightText">
               <strong>Oktane21</strong>
               <p>Catch up on all Oktane21 keynotes, sessions and annoucments.</p>
