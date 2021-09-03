@@ -14,7 +14,7 @@ import ContentFeature3 from "../components/ContentFeature3"
 function IndexPage({ data }) {
   return (
     <div className="page-container">
-      <div className="content-wrap">
+      <div className="content-wrap">  
         <Header></Header>
         <FeatureBar></FeatureBar>
 
@@ -31,8 +31,8 @@ function IndexPage({ data }) {
         <ValueProposition></ValueProposition>
 
         <ContentFeature3></ContentFeature3>
-        <ContentFeature2></ContentFeature2>
         <ContentFeature1></ContentFeature1>
+        <ContentFeature2></ContentFeature2>
       </div>
 
       <Footer></Footer>
