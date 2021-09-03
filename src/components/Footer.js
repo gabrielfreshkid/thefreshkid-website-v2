@@ -138,7 +138,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-row-2">
-              <div className="footer-socialMediaItems">
+              {/* <div className="footer-socialMediaItems">
                 <img
                   className={"footer-Youtube"}
                   alt={``}
@@ -166,7 +166,7 @@ export default function Footer() {
                   key={``}
                   src={data.allContentfulAsset.edges[24].node.file.url}
                 />
-              </div>
+              </div> */}
 
               <img
                 className={"footer-Photo"}
