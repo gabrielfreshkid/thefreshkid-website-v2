@@ -4,37 +4,36 @@ import { graphql, useStaticQuery } from "gatsby"
 
 export default function ContentFeature2() {
   const data = useStaticQuery(graphql`
-query ContentFeature2Query {
-  allContentfulFlexStyleBody {
-    edges {
-      node {
-        image {
-          file {
-            url
-          }
-        }
-        title
-        subTitle
-        category
-        callToAction
-        bodyText {
-          bodyText
-        }
-        displayBoard {
-          file {
-            url
-          }
-        }
-        displayBar {
-          file {
-            url
+    query ContentFeature2Query {
+      allContentfulFlexStyleBody {
+        edges {
+          node {
+            image {
+              file {
+                url
+              }
+            }
+            title
+            subTitle
+            category
+            callToAction
+            bodyText {
+              bodyText
+            }
+            displayBoard {
+              file {
+                url
+              }
+            }
+            displayBar {
+              file {
+                url
+              }
+            }
           }
         }
       }
     }
-  }
-}
-
   `)
 
   return (
@@ -50,8 +49,6 @@ query ContentFeature2Query {
       <p>{data.allContentfulFlexStyleBody.edges[0].node.category}</p>
       <p>{data.allContentfulFlexStyleBody.edges[0].node.callToAction}</p>
       <p>{data.allContentfulFlexStyleBody.edges[0].node.bodyText.bodyText}</p>
-
-
     </div>
   )
 

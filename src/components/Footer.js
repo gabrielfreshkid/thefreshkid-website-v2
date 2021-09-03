@@ -1,8 +1,22 @@
 import React, { useState } from "react"
 import "./Footer.css"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 
-function Footer() {
+export default function Footer() {
+  const data = useStaticQuery(graphql`
+    query FooterQuery {
+      allContentfulAsset {
+        edges {
+          node {
+            file {
+              url
+            }
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div>
       <nav className="footer-bar">
@@ -12,7 +26,35 @@ function Footer() {
               <h1>CRAFTED IN ITALY & UK</h1>
             </div>
 
-            <div className="footer-row-2">Logo Logo</div>
+            <div className="footer-row-2">
+              <img
+                className={"footer-marqueLogo"}
+                alt={``}
+                key={``}
+                src={data.allContentfulAsset.edges[11].node.file.url}
+              />
+
+              <img
+                className={"footer-marqueLogo"}
+                alt={``}
+                key={``}
+                src={data.allContentfulAsset.edges[8].node.file.url}
+              />
+
+              <img
+                className={"footer-marqueLogo"}
+                alt={``}
+                key={``}
+                src={data.allContentfulAsset.edges[9].node.file.url}
+              />
+
+              <img
+                className={"footer-marqueLogo"}
+                alt={``}
+                key={``}
+                src={data.allContentfulAsset.edges[10].node.file.url}
+              />
+            </div>
           </div>
 
           <div className="footer-col-2">
@@ -95,12 +137,52 @@ function Footer() {
               <h1>FREE SHIPPING £55+</h1>
             </div>
 
-            <div className="footer-row-2"></div>
+            <div className="footer-row-2">
+              <div className="footer-socialMediaItems">
+                <img
+                  className={"footer-Youtube"}
+                  alt={``}
+                  key={``}
+                  src={data.allContentfulAsset.edges[21].node.file.url}
+                />
+
+                <img
+                  className={"footer-Facebook"}
+                  alt={``}
+                  key={``}
+                  src={data.allContentfulAsset.edges[22].node.file.url}
+                />
+
+                <img
+                  className={"footer-Twitter"}
+                  alt={``}
+                  key={``}
+                  src={data.allContentfulAsset.edges[23].node.file.url}
+                />
+
+                <img
+                  className={"footer-Facebook"}
+                  alt={``}
+                  key={``}
+                  src={data.allContentfulAsset.edges[24].node.file.url}
+                />
+              </div>
+
+              <img
+                className={"footer-Photo"}
+                alt={``}
+                key={``}
+                src={data.allContentfulAsset.edges[25].node.file.url}
+              />
+              <div className="footer-RightText">
+              <strong>Oktane21</strong>
+              <p>Catch up on all Oktane21 keynotes, sessions and annoucments.</p>
+              <p>Learn More</p>
+              </div>
+            </div>
           </div>
         </div>
       </nav>
     </div>
   )
 }
-
-export default Footer

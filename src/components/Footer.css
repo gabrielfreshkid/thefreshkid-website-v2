@@ -1,5 +1,5 @@
 .footer-bar {
-  background: rgb(249,247,237);
+  background: rgb(82,82,80);
   height: 660px;
   width: 100%;
   position: sticky;
@@ -10,7 +10,7 @@
 .footer-bar-container {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-    color: rgb(82,82,80);
+    color: rgb(241,241,241);
     margin-left: 2rem;
 }
 
@@ -36,12 +36,12 @@
 }
 
 .inner-col-1 a {
-  color: rgb(82,82,80);
+  color: rgb(241,241,241);
   text-decoration: none;
 }
 
 .inner-col-2 a {
-  color: rgb(82,82,80);
+  color: rgb(241,241,241);
   text-decoration: none;
 }
 
@@ -61,8 +61,9 @@ justify-content: center;
 }
 
 .footer-row-2 {
-   display: flex;
-justify-content: center;
+  display:flex;
+  justify-content: left;
+ flex-direction: column;
  margin-bottom: 15%;
 }
 
@@ -79,9 +80,50 @@ justify-content: center;
 }
 
 .footer-row-2 h1 {
-font-size: 1rem;   
+  font-size: 1rem;   
 }
 
 .footer-row-3 h1 {
    font-size: 1rem;
+}
+
+.footer-marqueLogo {
+  width: 150px;
+}
+
+.footer-linkedIn {
+  height: 40px;
+}
+
+
+.footer-Youtube {
+  height: 40px;
+}
+
+
+.footer-Twitter {
+  height: 40px;
+}
+
+
+.footer-Facebook {
+  height: 40px;
+}
+
+.footer-socialMediaItems {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer-Photo {
+  height: 250px;
+  width: 250px;
+  margin-left: 65px;
+}
+
+.footer-RightText {
+   margin-left: 50px;
+   margin-top: 25px;
+   gap: 10px;
 }
