@@ -49,23 +49,23 @@ export default function ContentFeature1() {
         className={"displayBoard1"}
         alt={``}
         key={``}
-        src={
-          data.allContentfulFlexStyleBody.edges[2].node.displayBoard.file.url
-        }
+        src='./images/DisplayBoardPink.svg'
       />
 
       <img
         className={"displayBar1"}
         alt={``}
         key={``}
-        src={data.allContentfulFlexStyleBody.edges[2].node.displayBar.file.url}
+        src='./images/DisplayBarBlack.svg'
       />
 
-      <p>{data.allContentfulFlexStyleBody.edges[2].node.title}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[2].node.subTitle}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[2].node.category}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[2].node.callToAction}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[2].node.bodyText.bodyText}</p>
+      <div className={'textContainer1'}>
+        <p className={'subTitle1'}>{data.allContentfulFlexStyleBody.edges[2].node.subTitle}</p>
+        <p className={'title1'}>{data.allContentfulFlexStyleBody.edges[2].node.title}</p>
+        <p className={'categoryName1'}>{data.allContentfulFlexStyleBody.edges[2].node.category}</p>
+        <p className={'bodyText1'}>{data.allContentfulFlexStyleBody.edges[2].node.bodyText.bodyText}</p>
+        <p className={'callToAction1'}>{data.allContentfulFlexStyleBody.edges[2].node.callToAction}</p>
+      </div>
     </div>
   )
   // return <div className="contentFeature">

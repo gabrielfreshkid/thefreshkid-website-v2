@@ -38,32 +38,40 @@ export default function ContentFeature3() {
 
   return (
     <div className="contentFeature3">
-      <img
-        className={"contentFeatureImg3"}
-        alt={``}
-        key={``}
-        src={data.allContentfulFlexStyleBody.edges[1].node.image.file.url}
-      />
+      <div className={"imageContainer3"}>
+        <img
+          className={"bigImage"}
+          alt={``}
+          key={``}
+          src={data.allContentfulFlexStyleBody.edges[1].node.image.file.url}
+        />
+      </div>
 
-      <img
-        className={"displayBoard3"}
-        alt={``}
-        key={``}
-        src={data.allContentfulFlexStyleBody.edges[1].node.displayBoard.file.url}
-      />
+      <div className={"displayBoardContainer3"}>
+        <img
+          className={"displayBoard"}
+          alt={``}
+          key={``}
+          src={data.allContentfulFlexStyleBody.edges[1].node.displayBoard.file.url}
+        />
+      </div>
 
-      <img
-        className={"displayBar3"}
-        alt={``}
-        key={``}
-        src={data.allContentfulFlexStyleBody.edges[1].node.displayBar.file.url}
-      />
+      <div className={"displayBarContainer3"}>
+        <img
+          className={"displayBar"}
+          alt={``}
+          key={``}
+          src={data.allContentfulFlexStyleBody.edges[1].node.displayBar.file.url}
+        />
+      </div>
 
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.title}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.subTitle}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.category}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.callToAction}</p>
-      <p>{data.allContentfulFlexStyleBody.edges[1].node.bodyText.bodyText}</p>
+      <div className={'textContainer3'}>
+        <p className={'subTitle3'}>{data.allContentfulFlexStyleBody.edges[1].node.subTitle}</p>
+        <p className={'title3'}>{data.allContentfulFlexStyleBody.edges[1].node.title}</p>
+        <p className={'categoryName3'}>{data.allContentfulFlexStyleBody.edges[1].node.category}</p>
+        <p className={'bodyText3'}>{data.allContentfulFlexStyleBody.edges[1].node.bodyText.bodyText}</p>
+        <p className={'callToAction3'}>{data.allContentfulFlexStyleBody.edges[1].node.callToAction}</p>
+      </div>
     </div>
   )
 
