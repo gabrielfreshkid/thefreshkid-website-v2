@@ -150,7 +150,7 @@ export default function Footer() {
                   className={"footer-Facebook"}
                   alt={``}
                   key={``}
-                  src={data.allContentfulAsset.edges[22].node.file.url}
+                  src={data.allContentfulAsset.edges[20].node.file.url}
                 />
 
                 <img

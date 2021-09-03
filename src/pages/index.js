@@ -19,15 +19,9 @@ function IndexPage({ data }) {
         <FeatureBar></FeatureBar>
 
         <div className="heroImage">
-          {data.allContentfulHeroImage.edges.map(({ node }, index) => (
-            <img
-              className={"heroImage"}
-              alt={``}
-              key={``}
-              src={node.heroImage.file.url}
-            />
-          ))}
+     
         </div>
+        
         <ValueProposition></ValueProposition>
 
         <ContentFeature3></ContentFeature3>
@@ -57,3 +51,12 @@ export const query = graphql`
     }
   }
 `
+
+    //  {data.allContentfulHeroImage.edges.map(({ node }, index) => (
+    //         <img
+    //           className={"heroImage"}
+    //           alt={``}
+    //           key={``}
+    //           src={node.heroImage.file.url}
+    //         />
+    //       ))}
