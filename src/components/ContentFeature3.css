@@ -1,6 +1,6 @@
 .contentFeature3 {
 	width: 100vw;
-	height: 900px;
+	height: 930px;
 	background-color: rgb(255, 255, 255);
 	display: grid;
 	grid-template: 400px 400px / 1fr 1fr;
@@ -21,7 +21,7 @@
 }
 
 .displayBarContainer3 {
-	grid-column: 1 / 3;
+	grid-column: 1 / 4;
 	grid-row: 1 / 3;
 	z-index: 3;
 }
@@ -31,7 +31,8 @@
 	grid-column: 1;
 	grid-row: 1; 
 	z-index: 1;
-	transform: translateX(14.5vw) translateY(8vh);
+	display: grid;
+	transform: translateX(46%) translateY(15%);
 	max-width: 30vw;
 	width: auto;
 }
@@ -41,7 +42,7 @@
 	max-width: 100%;
 	height: auto;
 	width: auto;
-	transform: translateX(-50px) translateY(60px);
+	transform: translateX(-10%) translateY(8%);
 }
 
 .displayBoard {
@@ -55,7 +56,7 @@
 	max-width: 18%;
 	height: auto;
 	width: auto;
-	transform: translateX(32vw) translateY(65vh);
+	transform: translateX(170%) translateY(725%);
 }
 
 .title3 {

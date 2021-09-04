@@ -39,24 +39,10 @@ export default function ContentFeature1() {
   return (
     <div className="contentFeature1">
       <img
-        className={"contentFeatureImg1"}
+        className={"bigImage1"}
         alt={``}
         key={``}
         src={data.allContentfulFlexStyleBody.edges[2].node.image.file.url}
-      />
-
-      <img
-        className={"displayBoard1"}
-        alt={``}
-        key={``}
-        src='./images/DisplayBoardPink.svg'
-      />
-
-      <img
-        className={"displayBar1"}
-        alt={``}
-        key={``}
-        src='./images/DisplayBarBlack.svg'
       />
 
       <div className={'textContainer1'}>
