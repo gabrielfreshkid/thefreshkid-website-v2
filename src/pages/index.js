@@ -10,6 +10,8 @@ import ValueProposition from "../components/ValueProposition"
 import ContentFeature1 from "../components/ContentFeature1"
 import ContentFeature2 from "../components/ContentFeature2"
 import ContentFeature3 from "../components/ContentFeature3"
+import Quote1 from "../components/Quote1"
+import NewsletterBar from "../components/NewsletterBar"
 
 function IndexPage({ data }) {
   return (
@@ -25,8 +27,10 @@ function IndexPage({ data }) {
         <ValueProposition></ValueProposition>
 
         <ContentFeature3></ContentFeature3>
+        <Quote1 />
         <ContentFeature1></ContentFeature1>
         <ContentFeature2></ContentFeature2>
+        <NewsletterBar />
       </div>
 
       <Footer></Footer>

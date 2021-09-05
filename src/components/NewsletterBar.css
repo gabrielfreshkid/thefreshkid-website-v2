@@ -1,0 +1,115 @@
+.newsletterContainer {
+    width: 100vw;
+    height: 700px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+}
+
+.imageContainerNewsletter {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.bottomNL {
+    background-color: #525251;
+    grid-column: 1 / 3;
+    grid-row: 2;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}
+
+.textContainerNewsLetter {
+    grid-column: 2 / 3;
+    max-width: 90%;
+    max-height: 90%;
+    display: grid;
+    transform: translateX(0%) translateY(5%);
+}
+
+.bigImageNL {
+    max-width: 60%;
+    transform: translateX(60%) translateY(-10%);
+}
+
+.titleNL {
+    color: #F5F6F7;
+    font-size: 34px;
+}
+
+.bodyTextNL {
+    color: #F5F6F7;
+    font-size: 20px;
+}
+
+.termsNL {
+    color: #F5F6F7;
+}
+
+.radioSelectionNL {
+    --color: #F5F6F7;
+    /* box-sizing: border-box; */
+}
+
+/* .radioSelectionNL:before,
+.radioSelectionNL:after {
+    box-sizing: border-box;
+} */
+
+.radioButtonsNL {
+    font-size: 25px;
+    color: var(--color);
+    display: grid;
+    grid-template-rows: min-content auto;
+    grid-template-columns: min-content auto;
+    grid-gap: 0.5em;
+}
+
+.radioInput {
+    display: flex;
+}
+
+.radioInput input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.radioInput input[type="radio"]:checked + .radioControl {
+    background: radial-gradient(#FBD5C5 50%, rgba(255, 0, 0, 0) 51%);
+}
+
+.radioControl {
+    display: block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 0.1em solid currentColor;
+    transform: translateY(-0.05em);
+}
+
+.radioLabel {
+    line-height: 1;
+}
+
+.signUpSection {
+    display: flex;
+    align-items: center;
+}
+
+.emailInput {
+    width: 50%;
+    height: 100%;
+}
+
+.callToActionNL {
+    background-color: #F5F6F7;
+    color: #525251;
+    font-size: 26px;
+    align-self: center;
+    justify-self: center;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    transform: translateX(10%);
+}
