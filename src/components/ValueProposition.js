@@ -5,15 +5,33 @@ import "./ValueProposition.css"
 export default function ValueProposition() {
   const data = useStaticQuery(graphql`
     query ValuePropQuery {
-      allContentfulValuePropositions {
+      allContentfulDisplayBar {
         edges {
           node {
-            icon {
-              file {
-                url
+            referenceField1 {
+              valuePropText
+              icon {
+                file {
+                  url
+                }
               }
             }
-            valuePropText
+            referenceField2 {
+              valuePropText
+              icon {
+                file {
+                  url
+                }
+              }
+            }
+            referenceField3 {
+              valuePropText
+              icon {
+                file {
+                  url
+                }
+              }
+            }
           }
         }
       }
@@ -21,20 +39,37 @@ export default function ValueProposition() {
   `)
 
   return (
-    <div className="valuePropBar">
-      {data.allContentfulValuePropositions.edges.map(({ node }, index) => (
-        <div className="valueProp">
-          <div className="valuePropImg">
+    <div className="valuePropositionDisplayBar">
+      <div className="valueProposition1">
+          <div className="valuePropImage">
             <img
-              className={"valuePropLogo"}
               alt={``}
-              key={``}
-              src={node.icon.file.url}
+              key={``} 
+              src={data.allContentfulDisplayBar.edges[0].node.referenceField1.icon.file.url}
             />
           </div>
-          <div className="valuePropText">{node.valuePropText} </div>
+        <p className="valuePropositionText">{data.allContentfulDisplayBar.edges[0].node.referenceField1.valuePropText}</p>
+      </div>
+      <div className="valueProposition2">
+        <div className="valuePropImage">
+          <img
+            alt={``}
+            key={``} 
+            src={data.allContentfulDisplayBar.edges[0].node.referenceField2.icon.file.url}
+          />
         </div>
-      ))}
+        <p className="valuePropositionText">{data.allContentfulDisplayBar.edges[0].node.referenceField2.valuePropText}</p>
+      </div>
+      <div className="valueProposition3">
+        <div className="valuePropImage">
+          <img
+            alt={``}
+            key={``} 
+            src={data.allContentfulDisplayBar.edges[0].node.referenceField3.icon.file.url}
+          />
+        </div>
+        <p className="valuePropositionText">{data.allContentfulDisplayBar.edges[0].node.referenceField3.valuePropText}</p>
+      </div>
     </div>
   )
 }
