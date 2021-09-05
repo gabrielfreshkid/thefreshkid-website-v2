@@ -42,15 +42,15 @@ export default function ContentFeature1() {
         className={"bigImage1"}
         alt={``}
         key={``}
-        src={data.allContentfulFlexStyleBody.edges[2].node.image.file.url}
+        src={data.allContentfulFlexStyleBody.edges[0].node.image.file.url}
       />
 
       <div className={'textContainer1'}>
-        <p className={'subTitle1'}>{data.allContentfulFlexStyleBody.edges[2].node.subTitle}</p>
-        <p className={'title1'}>{data.allContentfulFlexStyleBody.edges[2].node.title}</p>
-        <p className={'categoryName1'}>{data.allContentfulFlexStyleBody.edges[2].node.category}</p>
-        <p className={'bodyText1'}>{data.allContentfulFlexStyleBody.edges[2].node.bodyText.bodyText}</p>
-        <p className={'callToAction1'}>{data.allContentfulFlexStyleBody.edges[2].node.callToAction}</p>
+        <p className={'subTitle1'}>{data.allContentfulFlexStyleBody.edges[0].node.subTitle}</p>
+        <p className={'title1'}>{data.allContentfulFlexStyleBody.edges[0].node.title}</p>
+        <p className={'categoryName1'}>{data.allContentfulFlexStyleBody.edges[0].node.category}</p>
+        <p className={'bodyText1'}>{data.allContentfulFlexStyleBody.edges[0].node.bodyText.bodyText}</p>
+        <p className={'callToAction1'}>{data.allContentfulFlexStyleBody.edges[0].node.callToAction}</p>
       </div>
     </div>
   )
