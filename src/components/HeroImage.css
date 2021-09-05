@@ -1,0 +1,10 @@
+.heroImageContainer {
+    background-color: bisque;
+    height: 70%;
+    width: 100%;
+    display: grid;    
+}
+
+.heroImage {
+    height: 100%;
+}

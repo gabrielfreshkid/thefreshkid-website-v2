@@ -12,6 +12,7 @@ import ContentFeature2 from "../components/ContentFeature2"
 import ContentFeature3 from "../components/ContentFeature3"
 import Quote1 from "../components/Quote1"
 import NewsletterBar from "../components/NewsletterBar"
+import HeroImage from "../components/HeroImage"
 
 function IndexPage({ data }) {
   return (
@@ -19,10 +20,8 @@ function IndexPage({ data }) {
       <div className="content-wrap">  
         <Header></Header>
         <FeatureBar></FeatureBar>
+        <HeroImage/>
 
-        <div className="heroImage">
-     
-        </div>
         
         <ValueProposition></ValueProposition>
 
