@@ -58,12 +58,12 @@ query ContentFeature2Query {
       </div>
 
       <div className={"displayBarContainer2"}>
-        <img
+        {/* <img
           className={"displayBar2"}
           alt={``}
           key={``}
           src={data.allContentfulFlexStyleBody.edges[0].node.displayBar.file.url}
-        />
+        /> */}
       </div>
 
       <div className={'textContainer2'}>
