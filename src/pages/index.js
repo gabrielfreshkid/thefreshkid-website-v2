@@ -27,8 +27,8 @@ function IndexPage({ data }) {
         <ValueProposition></ValueProposition>
 
         <ContentFeature3></ContentFeature3>
-        <Quote1 />
         <ContentFeature1></ContentFeature1>
+        <Quote1 />
         <ContentFeature2></ContentFeature2>
         <NewsletterBar />
       </div>
