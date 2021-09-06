@@ -53,14 +53,14 @@
 
 .valuePropositionTitle {
     color: #525251;
-    font-size: 20px;
+    font-size: 18px;
     grid-column: 1;
     grid-row: 1;
 }
 
 .valuePropositionBody {
     color: #525251;
-    font-size: 16px;
+    font-size: 14px;
     grid-column: 1;
     grid-row: 2;
 }
