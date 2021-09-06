@@ -45,11 +45,24 @@
     font-size: 24px;
     grid-column: 2;
     grid-row: 1;
-    max-width: 80%;
-    align-self: center;
+    /* max-width: 80%; */
     transform: translateX(15%);
-    /* height: 50px; */
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
 }
 
+.valuePropositionTitle {
+    color: #525251;
+    font-size: 20px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.valuePropositionBody {
+    color: #525251;
+    font-size: 16px;
+    grid-column: 1;
+    grid-row: 2;
+}
 
 

@@ -9,6 +9,7 @@ export default function ValueProposition() {
         edges {
           node {
             referenceField1 {
+              description
               valuePropText
               icon {
                 file {
@@ -17,6 +18,7 @@ export default function ValueProposition() {
               }
             }
             referenceField2 {
+              description
               valuePropText
               icon {
                 file {
@@ -25,6 +27,7 @@ export default function ValueProposition() {
               }
             }
             referenceField3 {
+              description
               valuePropText
               icon {
                 file {
@@ -48,7 +51,10 @@ export default function ValueProposition() {
               src={data.allContentfulDisplayBar.edges[0].node.referenceField1.icon.file.url}
             />
           </div>
-        <p className="valuePropositionText">{data.allContentfulDisplayBar.edges[0].node.referenceField1.valuePropText}</p>
+          <div className="valuePropositionText">
+            <p className="valuePropositionTitle">{data.allContentfulDisplayBar.edges[0].node.referenceField1.description}</p>
+            <p className="valuePropositionBody">{data.allContentfulDisplayBar.edges[0].node.referenceField1.valuePropText}</p>
+          </div>
       </div>
       <div className="valueProposition2">
         <div className="valuePropImage">
@@ -58,7 +64,10 @@ export default function ValueProposition() {
             src={data.allContentfulDisplayBar.edges[0].node.referenceField2.icon.file.url}
           />
         </div>
-        <p className="valuePropositionText">{data.allContentfulDisplayBar.edges[0].node.referenceField2.valuePropText}</p>
+        <div className="valuePropositionText">
+          <p className="valuePropositionTitle">{data.allContentfulDisplayBar.edges[0].node.referenceField2.description}</p>
+          <p className="valuePropositionBody">{data.allContentfulDisplayBar.edges[0].node.referenceField2.valuePropText}</p>
+        </div>
       </div>
       <div className="valueProposition3">
         <div className="valuePropImage">
@@ -68,7 +77,10 @@ export default function ValueProposition() {
             src={data.allContentfulDisplayBar.edges[0].node.referenceField3.icon.file.url}
           />
         </div>
-        <p className="valuePropositionText">{data.allContentfulDisplayBar.edges[0].node.referenceField3.valuePropText}</p>
+        <div className="valuePropositionText">
+          <p className="valuePropositionTitle">{data.allContentfulDisplayBar.edges[0].node.referenceField3.description}</p>
+          <p className="valuePropositionBody">{data.allContentfulDisplayBar.edges[0].node.referenceField3.valuePropText}</p>
+        </div>
       </div>
     </div>
   )
