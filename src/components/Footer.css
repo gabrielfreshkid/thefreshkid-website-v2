@@ -1,6 +1,6 @@
 .footer-bar {
   background: rgb(82,82,80);
-  height: 660px;
+  height: 750px;
   width: 100%;
   position: sticky;
   top: 0;
@@ -12,6 +12,7 @@
     grid-template-columns: 3fr 3fr 3fr;
     color: rgb(241,241,241);
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .footer-row-2-split {
@@ -24,6 +25,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    
    
 }
 
@@ -46,8 +48,10 @@
 }
 
 .footer-link {
-    margin-bottom: 10px;
-    margin-left: 35%;
+  width: 180px;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-left: 35%;
 }
 
 .title {
@@ -55,24 +59,23 @@
 }
 
 .footer-row-1 {
-display: flex;
-justify-content: center;
- margin-bottom: 15%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15%;
 }
 
 .footer-row-2 {
-  display:flex;
-  justify-content: left;
- flex-direction: column;
- margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15%;
+  align-items: center;
 }
 
 .footer-row-3 {
-display: flex;
-justify-content: center;
- margin-bottom: 15%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
 }
-
 
 .footer-row-1 h1 {
   margin-top: 10px; 
@@ -87,43 +90,99 @@ justify-content: center;
    font-size: 1rem;
 }
 
-.footer-marqueLogo {
+.footerCompanyLogo {
+  width: 100px;
+  transform: translateY(30px);
+}
+
+.footerPartnerLogos {
+  width: 85%;
+  object-fit: cover;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerPartnerLogosRow1 {
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerPartnerLogosRow2 {
+  grid-row: 2;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr;
+  display: flex;
+  flex-direction: row;
+  transform: translateY(90px);
+}
+
+.footerTextLeft {
+  transform: translateY(120px);
+}
+
+.footerBigCommerceLogo {
+  width: 200px;
+  transform: translateY(120px);
+  
+}
+
+.footerEConsultancyLogo {
   width: 150px;
+  grid-column: 2 / 3;
+  grid-row: 1;
 }
 
-.footer-linkedIn {
-  height: 40px;
+.footerIDMLogo {
+  width: 150px;
+  height: 150px;
+  grid-column: 3 / 4;
+  grid-row: 1;
 }
 
-
-.footer-Youtube {
-  height: 40px;
-}
-
-
-.footer-Twitter {
-  height: 40px;
-}
-
-
-.footer-Facebook {
-  height: 40px;
-}
-
-.footer-socialMediaItems {
+.footerSocialMediaItems {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
 }
 
-.footer-Photo {
-  height: 250px;
-  width: 250px;
-  margin-left: 65px;
+.footerSocialIcon {
+  height: 40px;
 }
 
-.footer-RightText {
+.footerPhoto {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  margin-left: 12%;
+}
+
+.footerImage {
+  position: relative;
+  width: 75%;
+  height: 75%;
+  margin-left: 12%;
+  z-index: 3;
+}
+
+.footerPhotoBackDrop {
+  position: absolute;
+  width: 75%;
+  height: 18.25vw;
+  object-fit: cover;
+  margin-left: 12%;
+  z-index: 0;
+  transform: translateX(-110%) translateY(4%);
+}
+
+.footerRightText {
    margin-left: 50px;
    margin-top: 25px;
    gap: 10px;
+   max-width: 300px;
+   transform: translateX(40px);
 }

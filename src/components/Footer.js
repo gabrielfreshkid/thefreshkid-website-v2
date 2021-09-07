@@ -5,11 +5,65 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 export default function Footer() {
   const data = useStaticQuery(graphql`
     query FooterQuery {
-      allContentfulAsset {
+      allContentfulFooter {
         edges {
           node {
-            file {
-              url
+            valueProposition1
+            valueProposition2
+            valueProposition3
+            companyLogo {
+              file {
+                url
+              }
+            }
+            additionalImage {
+              file {
+                url
+              }
+            }
+            displayBoard {
+              file {
+                url
+              }
+            }
+            partnerLogos {
+              bigCommerceLogo {
+                file {
+                  url
+                }
+              }
+              eConsultancyLogo {
+                file {
+                  url
+                }
+              }
+              idmLogo {
+                file {
+                  url
+                }
+              }
+            }
+            socialIcons {
+              facebookIcon {
+                file {
+                  url
+                }
+              }
+              linkedInIcon {
+                file {
+                  url
+                }
+              }
+              twitterIcon {
+                file {
+                  url
+                }
+              }
+              youtubeIcon {
+                file {
+                  url
+                }
+              }
             }
           }
         }
@@ -23,43 +77,49 @@ export default function Footer() {
         <div className="footer-bar-container">
           <div className="footer-col-1">
             <div className="footer-row-1">
-              <h1>CRAFTED IN ITALY & UK</h1>
+              <h1>{data.allContentfulFooter.edges[0].node.valueProposition1}</h1>
             </div>
 
             <div className="footer-row-2">
               <img
-                className={"footer-marqueLogo"}
+                className={"footerCompanyLogo"}
                 alt={``}
                 key={``}
-                src={data.allContentfulAsset.edges[11].node.file.url}
+                src={data.allContentfulFooter.edges[0].node.companyLogo.file.url}
               />
 
-              <img
-                className={"footer-marqueLogo"}
-                alt={``}
-                key={``}
-                src={data.allContentfulAsset.edges[8].node.file.url}
-              />
+              <div className="footerPartnerLogos">
+                
+                <div className="footerPartnerLogosRow1"></div>
+                <p className="footerTextLeft">Our technology partnership and certifications</p>
+                <img
+                  className={"footerBigCommerceLogo"}
+                  alt={``}
+                  key={``}
+                  src={data.allContentfulFooter.edges[0].node.partnerLogos.bigCommerceLogo.file.url}
+                />
+                </div>
+                <div className="footerPartnerLogosRow2">
+                  <img
+                    className={"footerEConsultancyLogo"}
+                    alt={``}
+                    key={``}
+                    src={data.allContentfulFooter.edges[0].node.partnerLogos.eConsultancyLogo.file.url}
+                  />
 
-              <img
-                className={"footer-marqueLogo"}
-                alt={``}
-                key={``}
-                src={data.allContentfulAsset.edges[9].node.file.url}
-              />
-
-              <img
-                className={"footer-marqueLogo"}
-                alt={``}
-                key={``}
-                src={data.allContentfulAsset.edges[10].node.file.url}
-              />
+                  <img
+                    className={"footerIDMLogo"}
+                    alt={``}
+                    key={``}
+                    src={data.allContentfulFooter.edges[0].node.partnerLogos.idmLogo.file.url}
+                  />
+              </div>
             </div>
           </div>
 
           <div className="footer-col-2">
             <div className="footer-row-1">
-              <h1>RESPONSIBLY MADE</h1>
+              <h1>{data.allContentfulFooter.edges[0].node.valueProposition2}</h1>
             </div>
 
             <div className="footer-row-2-split">
@@ -134,50 +194,59 @@ export default function Footer() {
 
           <div className="footer-col-1">
             <div className="footer-row-1">
-              <h1>FREE SHIPPING £55+</h1>
+              <h1>{data.allContentfulFooter.edges[0].node.valueProposition3}</h1>
             </div>
 
-            <div className="footer-row-2">
-              {/* <div className="footer-socialMediaItems">
+            <div className="footer-row-3">
+              <div className="footerSocialMediaItems">
                 <img
-                  className={"footer-Youtube"}
+                  className={"footerSocialIcon"}
                   alt={``}
                   key={``}
-                  src={data.allContentfulAsset.edges[21].node.file.url}
+                  src={data.allContentfulFooter.edges[0].node.socialIcons.linkedInIcon.file.url}
                 />
 
                 <img
-                  className={"footer-Facebook"}
+                  className={"footerSocialIcon"}
                   alt={``}
                   key={``}
-                  src={data.allContentfulAsset.edges[20].node.file.url}
+                  src={data.allContentfulFooter.edges[0].node.socialIcons.youtubeIcon.file.url}
                 />
 
                 <img
-                  className={"footer-Twitter"}
+                  className={"footerSocialIcon"}
                   alt={``}
                   key={``}
-                  src={data.allContentfulAsset.edges[23].node.file.url}
+                  src={data.allContentfulFooter.edges[0].node.socialIcons.facebookIcon.file.url}
                 />
 
                 <img
-                  className={"footer-Facebook"}
+                  className={"footerSocialIcon"}
                   alt={``}
                   key={``}
-                  src={data.allContentfulAsset.edges[24].node.file.url}
+                  src={data.allContentfulFooter.edges[0].node.socialIcons.twitterIcon.file.url}
                 />
-              </div> */}
+              </div>
+              <div className="footerPhoto">
+                <img
+                  className={"footerImage"}
+                  alt={``}
+                  key={``}
+                  src={data.allContentfulFooter.edges[0].node.additionalImage.file.url}
+                />
 
-              {/* <img
-                className={"footer-Photo"}
-                alt={``}
-                key={``}
-                src={data.allContentfulAsset.edges[25].node.file.url}
-              /> */}
-              <div className="footer-RightText">
-              <strong>Oktane21</strong>
-              <p>Catch up on all Oktane21 keynotes, sessions and annoucments.</p>
-              <p>Learn More</p>
+                <img
+                  className={"footerPhotoBackDrop"}
+                  alt={``}
+                  key={``}
+                  src={data.allContentfulFooter.edges[0].node.displayBoard.file.url}
+                />
+              </div>
+
+              <div className="footerRightText">
+                <strong>Oktane21</strong>
+                <p>Catch up on all Oktane21 keynotes, sessions and annoucments.</p>
+                <p>Learn More</p>
               </div>
             </div>
           </div>
