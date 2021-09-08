@@ -1,63 +1,56 @@
 .contentFeature2 {
+	position: relative;
 	width: 100%;
 	height: 800px;
 	background-color: rgb(255, 255, 255);
-	display: grid;
-	grid-template:  1fr / 1fr 1fr 1fr;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.boardTextContainer2 {
+	position: relative;
+	width: 46%;
+	height: 30.5vw;
+	transform: translateX(-48%) translateY(0%);
 }
 
 .imageContainer2 {
-	grid-column: 3;
-	grid-row: 1;
+	position: absolute;
+	max-width: 33%;
+	transform: translateX(75%) translateY(0%);
 	z-index: 2;
 }
 
 .displayBoardContainer2 {
-	grid-column: 1 / 3;
-	grid-row: 1;
-	
-}
-
-.displayBarContainer2 {
-	grid-column: 2;
-	grid-row: 1;
-	z-index: 3;
-}
-
-.textContainer2 {
-	color:rgb(0, 0, 0);
-	grid-column: 1 / 4;
-	grid-row: 1; 
-	z-index: 1;
-	max-width: 35vw;
-	max-height: 60vh;
-	width: auto;
-	display: grid;
-	transform: translateX(16%) translateY(2%);
-
-}
-
-.bigImage2 {
-	max-height: 95%;
-	max-width: 100%;
-	height: auto;
-	width: auto;
-	transform: translateX(-25%) translateY(0px);
-}
-
-.displayBoard2 {
-	width: 70%;
-	transform: translateX(10%) translateY(0%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #FBD5C5;
 	z-index: 0;
 }
 
-.displayBar2 {
-	max-height: 30%;
-	max-width: 60%;
-	height: auto;
-	width: auto;
-	transform: translateX(70%) translateY(45%);
+.displayBarContainer2 {
+	position: absolute;
+	width: 20%;
+	height: 4.5vw;
+	z-index: 3;
+	background-color: #525251;
+	transform: translateX(36%) translateY(60%);
 }
+
+.textContainer2 {
+	position: absolute;
+	color:rgb(0, 0, 0);
+	width: 80%;
+	height: 90%;
+	display: grid;
+	transform: translateX(4%) translateY(5%);
+
+}
+
+/* TEXT */
 
 .categoryName2 {
 	color: #525251;
