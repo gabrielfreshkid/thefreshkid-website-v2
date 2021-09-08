@@ -1,86 +1,90 @@
-.contentFeature3 {
-	width: 100vw;
-	height: 930px;
+.contentFeature2 {
+	width: 100%;
+	height: 800px;
 	background-color: rgb(255, 255, 255);
 	display: grid;
-	grid-template: 400px 400px / 1fr 1fr;
-
+	grid-template:  1fr / 1fr 1fr 1fr;
 }
 
-.imageContainer3 {
-	grid-column: 2;
-	grid-row: 1 / 3;
+.imageContainer2 {
+	grid-column: 3;
+	grid-row: 1;
 	z-index: 2;
 }
 
-
-.displayBoardContainer3 {
+.displayBoardContainer2 {
 	grid-column: 1 / 3;
-	grid-row: 1 / 3;
+	grid-row: 1;
 	
 }
 
-.displayBarContainer3 {
-	grid-column: 1 / 4;
-	grid-row: 1 / 3;
+.displayBarContainer2 {
+	grid-column: 2;
+	grid-row: 1;
 	z-index: 3;
 }
 
-.textContainer3 {
+.textContainer2 {
 	color:rgb(0, 0, 0);
-	grid-column: 1;
+	grid-column: 1 / 4;
 	grid-row: 1; 
 	z-index: 1;
-	display: grid;
-	transform: translateX(55%) translateY(15%);
-	max-width: 60%;
+	max-width: 35vw;
+	max-height: 60vh;
 	width: auto;
+	display: grid;
+	transform: translateX(16%) translateY(2%);
+
 }
 
-.bigImage {
-	width: 70%;
-	transform: translateX(-5%) translateY(7%);
+.bigImage2 {
+	max-height: 95%;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	transform: translateX(-25%) translateY(0px);
 }
 
-.displayBoard {
-	background-color: cadetblue;
+.displayBoard2 {
 	width: 70%;
-	transform: translateX(21.5%) translateY(30px);
+	transform: translateX(10%) translateY(0%);
 	z-index: 0;
 }
 
-.displayBar {
-	max-height: 18%;
-	max-width: 18%;
+.displayBar2 {
+	max-height: 30%;
+	max-width: 60%;
 	height: auto;
 	width: auto;
-	transform: translateX(185%) translateY(680%);
+	transform: translateX(70%) translateY(45%);
 }
 
-.title3 {
-	color: #F5F6F7;
+.categoryName2 {
+	color: #525251;
+	font-size: 26px;
+}
+
+.title2 {
+	color: #525251;
 	font-size: 48px;
 	font-family: aria;
 }
 
-.subTitle3 {
-	color: #F5F6F7;
-	font-size: 26px;
+.subTitle2 {
+	color: #525251;
+	/* font-size: 48px; Uncomment when right fonts are in*/
+	font-size: 32px;
 }
 
-.categoryName3 {
-	color: #FBD5C5;
-	font-size: 48px;
 
-}
-
-.bodyText3 {
-	color: #F5F6F7;
+.bodyText2 {
+	color: #525251;
 	font-size: 24px;
 }
 
-.callToAction3 {
-	color: #F5F6F7;
+.callToAction2 {
+	color: #525251;
 	font-size: 27px;
 	text-decoration: underline;
 }
+
