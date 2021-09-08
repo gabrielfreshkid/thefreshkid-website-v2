@@ -29,8 +29,8 @@
 	z-index: 1;
 	display: grid;
 	width: 40%;
-	height: 70%;
-	transform: translateX(8%) translateY(5.5%);
+	height: 80%;
+	transform: translateX(5.5%) translateY(5.5%);
 	z-index: 90;
 }
 
@@ -51,9 +51,7 @@
 	transform: translateX(-8vw) translateY(25vw);
 }
 
-.bigImage {
-
-}
+/* TEXT */
 
 .title3 {
 	color: #F5F6F7;
