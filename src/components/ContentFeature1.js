@@ -3,9 +3,9 @@ import "./ContentFeature1.css"
 import "./Fonts.css"
 import { graphql, useStaticQuery } from "gatsby"
 
-export default function ContentFeature1() {
+export default function ContentFeature3() {
   const data = useStaticQuery(graphql`
-    query ContentFeature1Query {
+    query ContentFeature3Query {
       allContentfulFlexStyleBody {
         edges {
           node {
@@ -38,23 +38,38 @@ export default function ContentFeature1() {
   `)
 
   return (
-    <div className="contentFeature1">
-      <img
-        className={"bigImage1"}
-        alt={``}
-        key={``}
-        src={data.allContentfulFlexStyleBody.edges[0].node.image.file.url}
-      />
+    <div className="contentFeature3">
+      <div className="boardTextContainer3">
+        <div className={'textContainer3'}>
+          <p className={'subTitle3'}>{data.allContentfulFlexStyleBody.edges[1].node.subTitle}</p>
+          <p className={'title3'}>{data.allContentfulFlexStyleBody.edges[1].node.title}</p>
+          <p className={'categoryName3'}>{data.allContentfulFlexStyleBody.edges[1].node.category}</p>
+          <p className={'bodyText3'}>{data.allContentfulFlexStyleBody.edges[1].node.bodyText.bodyText}</p>
+          <p className={'callToAction3'}>{data.allContentfulFlexStyleBody.edges[1].node.callToAction}</p>
+        </div>
+        <div className={"displayBoardContainer3"}>
+          <div className="displayBoard3">
 
-      <div className={'textContainer1'}>
-        <p className={'subTitle1'}>{data.allContentfulFlexStyleBody.edges[0].node.subTitle}</p>
-        <p className={'title1'}>{data.allContentfulFlexStyleBody.edges[0].node.title}</p>
-        <p className={'categoryName1'}>{data.allContentfulFlexStyleBody.edges[0].node.category}</p>
-        <p className={'bodyText1'}>{data.allContentfulFlexStyleBody.edges[0].node.bodyText.bodyText}</p>
-        <p className={'callToAction1'}>{data.allContentfulFlexStyleBody.edges[0].node.callToAction}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className={"displayBarContainer3"}>
+        <div className="displayBar3">
+
+        </div>
+      </div>
+      <div className={"imageContainer3"}>
+        <img
+          className={"bigImage"}
+          alt={``}
+          key={``}
+          src={data.allContentfulFlexStyleBody.edges[1].node.image.file.url}
+        />
       </div>
     </div>
   )
+
   // return <div className="contentFeature">
   //         {data.allContentfulFlexStyleBody.edges[0].map(({ node }, index) => (
   //           <img

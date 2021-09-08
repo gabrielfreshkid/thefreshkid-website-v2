@@ -8,6 +8,7 @@
 .imageContainerNewsletter {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    transform: translateX(36%) translateY(-12%);
 }
 
 .bottomNL {
@@ -27,8 +28,8 @@
 }
 
 .bigImageNL {
-    max-width: 60%;
-    transform: translateX(60%) translateY(-10%);
+    max-width: 510px;
+    /* transform: translateX(60%) translateY(-10%); */
 }
 
 .titleNL {

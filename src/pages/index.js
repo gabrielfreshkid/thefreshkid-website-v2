@@ -7,9 +7,9 @@ import FeatureBar from "../components/FeatureBar"
 import Footer from "../components/Footer"
 import ValueProposition from "../components/ValueProposition"
 
-import ContentFeature1 from "../components/ContentFeature1"
 import ContentFeature2 from "../components/ContentFeature2"
 import ContentFeature3 from "../components/ContentFeature3"
+import ContentFeature1 from "../components/ContentFeature1"
 import Quote1 from "../components/Quote1"
 import NewsletterBar from "../components/NewsletterBar"
 import HeroImage from "../components/HeroImage"
@@ -25,10 +25,10 @@ function IndexPage({ data }) {
         
         <ValueProposition></ValueProposition>
 
-        <ContentFeature3></ContentFeature3>
         <ContentFeature1></ContentFeature1>
-        <Quote1 />
         <ContentFeature2></ContentFeature2>
+        <Quote1 />
+        <ContentFeature3></ContentFeature3>
         <NewsletterBar />
       </div>
 
@@ -38,28 +38,3 @@ function IndexPage({ data }) {
 }
 
 export default IndexPage
-
-// export const query = graphql`
-//   query MyQuery {
-//     allContentfulHeroImage {
-//       edges {
-//         node {
-//           heroImage {
-//             file {
-//               url
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
-
-    //  {data.allContentfulHeroImage.edges.map(({ node }, index) => (
-    //         <img
-    //           className={"heroImage"}
-    //           alt={``}
-    //           key={``}
-    //           src={node.heroImage.file.url}
-    //         />
-    //       ))}

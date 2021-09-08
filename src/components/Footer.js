@@ -82,38 +82,40 @@ export default function Footer() {
             </div>
 
             <div className="footer-row-2">
-              <img
-                className={"footerCompanyLogo"}
-                alt={``}
-                key={``}
-                src={data.allContentfulFooter.edges[0].node.companyLogo.file.url}
-              />
-
-              <div className="footerPartnerLogos">
-                
-                <div className="footerPartnerLogosRow1"></div>
-                <p className="footerTextLeft">Our technology partnership and certifications</p>
+              <div className="footerLogoSection">
                 <img
-                  className={"footerBigCommerceLogo"}
+                  className={"footerCompanyLogo"}
                   alt={``}
                   key={``}
-                  src={data.allContentfulFooter.edges[0].node.partnerLogos.bigCommerceLogo.file.url}
+                  src={data.allContentfulFooter.edges[0].node.companyLogo.file.url}
                 />
-                </div>
-                <div className="footerPartnerLogosRow2">
-                  <img
-                    className={"footerEConsultancyLogo"}
-                    alt={``}
-                    key={``}
-                    src={data.allContentfulFooter.edges[0].node.partnerLogos.eConsultancyLogo.file.url}
-                  />
 
+                <div className="footerPartnerLogos">
+                  
+                  <div className="footerPartnerLogosRow1"></div>
+                  <p className="footerTextLeft">Our technology partnership and certifications</p>
                   <img
-                    className={"footerIDMLogo"}
+                    className={"footerBigCommerceLogo"}
                     alt={``}
                     key={``}
-                    src={data.allContentfulFooter.edges[0].node.partnerLogos.idmLogo.file.url}
+                    src={data.allContentfulFooter.edges[0].node.partnerLogos.bigCommerceLogo.file.url}
                   />
+                  </div>
+                  <div className="footerPartnerLogosRow2">
+                    <img
+                      className={"footerEConsultancyLogo"}
+                      alt={``}
+                      key={``}
+                      src={data.allContentfulFooter.edges[0].node.partnerLogos.eConsultancyLogo.file.url}
+                    />
+
+                    <img
+                      className={"footerIDMLogo"}
+                      alt={``}
+                      key={``}
+                      src={data.allContentfulFooter.edges[0].node.partnerLogos.idmLogo.file.url}
+                    />
+                  </div>
               </div>
             </div>
           </div>
