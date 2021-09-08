@@ -2,8 +2,21 @@
     height: 70%;
     width: 100%;
     display: grid;    
+    animation: fadeIn 4s;
 }
 
 .heroImage {
     height: 100%;
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
 }
