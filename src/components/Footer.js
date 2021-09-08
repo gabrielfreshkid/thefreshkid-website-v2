@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./Footer.css"
+import "./Fonts.css"
 import { Link, graphql, useStaticQuery } from "gatsby"
 
 export default function Footer() {
@@ -248,7 +249,9 @@ export default function Footer() {
               <div className="footerRightText">
                 <strong>Oktane21</strong>
                 <p>Catch up on all Oktane21 keynotes, sessions and annoucments.</p>
+                <div className="footerCalltoActionR">
                 <p>Learn More</p>
+                </div>
               </div>
             </div>
           </div>

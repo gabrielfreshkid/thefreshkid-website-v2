@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import './Header.css'
+import '../pages/index.css'
+import './Fonts.css'
 
 function Header() {
     return(
