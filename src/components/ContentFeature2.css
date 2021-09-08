@@ -12,6 +12,7 @@
 .imageContainer1 {
 	position: absolute;
 	width: 900px;
+	max-height: 601px;
 	z-index: 0;
 	transform: translateX(-15vw);
 	background-color: aliceblue;
