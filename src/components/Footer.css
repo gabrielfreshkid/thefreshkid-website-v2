@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  animation: fadeIn 5s;
 }
 
 .footer-bar-container {
@@ -190,4 +191,17 @@
    gap: 10px;
    max-width: 300px;
    transform: translateX(40px);
+}
+
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
 }

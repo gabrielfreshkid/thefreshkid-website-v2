@@ -7,6 +7,19 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+  
 }
 
 .navbar-container {
