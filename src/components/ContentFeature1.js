@@ -3,6 +3,7 @@ import "./ContentFeature1.css"
 import "./Fonts.css"
 import { graphql, useStaticQuery } from "gatsby"
 
+
 export default function ContentFeature3() {
   const data = useStaticQuery(graphql`
     query ContentFeature3Query {
@@ -69,15 +70,4 @@ export default function ContentFeature3() {
       </div>
     </div>
   )
-
-  // return <div className="contentFeature">
-  //         {data.allContentfulFlexStyleBody.edges[0].map(({ node }, index) => (
-  //           <img
-  //             className={"contentFeatureImg"}
-  //             alt={``}
-  //             key={``}
-  //             src={node.image.file.url}
-  //           />
-  //         ))}
-  // </div>
 }

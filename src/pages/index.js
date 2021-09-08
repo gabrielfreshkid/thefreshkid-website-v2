@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql } from "gatsby"
+import ReactDOM  from "react-dom"
 import "./index.css"
 
 import Header from "../components/Header"
@@ -18,21 +19,21 @@ function IndexPage({ data }) {
   return (
     <div className="page-container">
       <div className="content-wrap">  
-        <Header></Header>
+        {/* <Header></Header>
         <FeatureBar></FeatureBar>
         <HeroImage/>
 
         
-        <ValueProposition></ValueProposition>
+        <ValueProposition></ValueProposition> */}
 
         <ContentFeature1></ContentFeature1>
-        <ContentFeature2></ContentFeature2>
+        {/* <ContentFeature2></ContentFeature2>
         <Quote1 />
         <ContentFeature3></ContentFeature3>
-        <NewsletterBar />
+        <NewsletterBar /> */}
       </div>
 
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </div>
   )
 }
