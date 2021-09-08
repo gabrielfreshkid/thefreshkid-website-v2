@@ -1,3 +1,37 @@
+@font-face {
+	font-family: "Raleway-Medium";
+	src: url ("../fonts/Raleway-Medium.ttf") format("tff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Raleway-Bold";
+	src: url ("../fonts/Raleway-Bold.ttf") format("tff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Photograph-Signature";
+	src: url ("../fonts/PhotographSignature.ttf") format("tff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Aria-TextG2-Bold";
+	src: url ("../fonts/AriaTextG2-Bold.ttf") format("tff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Aria-TextG2-SemiBold";
+	src: url ("../fonts/AriaTextG2-SemiBold.ttf") format("tff");
+	font-weight: normal;
+	font-style: normal;
+}
 
 .heroImage {
 	width: 100%;

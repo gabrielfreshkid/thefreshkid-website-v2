@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import "./NewsletterBar.css"
+import "./Fonts.css"
 
 export default function NewsletterBar() {
     const data = useStaticQuery(graphql`

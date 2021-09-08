@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import "./Quote1.css"
+import "./Fonts.css"
 
 
 export default function Quote1() {

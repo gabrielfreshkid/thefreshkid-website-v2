@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./ContentFeature3.css"
+import "./Fonts.css"
 import { graphql, useStaticQuery } from "gatsby"
 
 export default function ContentFeature3() {
