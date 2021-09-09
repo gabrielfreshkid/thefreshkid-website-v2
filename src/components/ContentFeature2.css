@@ -24,8 +24,8 @@
 	z-index: 1;
 	max-width: 650px;
 	max-height: 550px;
-	width: 50vw;
-	height: 550px;
+	width: 45vw;
+	height: 420px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -36,31 +36,71 @@
 
 .categoryName1 {
 	color: #525251;
-	font-size: 36px;
+	font-size: 22px;
 
 }
 
 .title1 {
 	color: #525251;
-	font-size: 48px;
+	font-size: 40px;
 	line-height: 1em;
 }
 
 .subTitle1 {
 	color: #525251;
-	font-size: 48px;
+	font-size: 40px;
 }
 
 
 .bodyText1 {
 	color: #525251;
-	font-size: 24px;
+	font-size: 22px;
 }
 
 .callToAction1 {
 	color: #525251;
-	font-size: 28px;
+	font-size: 24px;
 	text-decoration: underline;	
 }
 
+
+@media screen and (max-width: 1200px) {
+	.boardTextContainer3 {
+		width: 80vw;
+		height: 40vw;
+	}
+	
+	.imageContainer3 {
+		position: absolute;
+		width: 40%;
+		height: auto;
+		transform: translateX(45%) translateY(3%);
+	}
+	
+	.displayBarContainer3 {
+		width: 22%;
+		height: 5vw;
+		background-color: #FBD5C5;
+		transform: translateX(-5vw) translateY(30vw);
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.contentFeature1 {
+		background-color: rgb(56, 30, 30);
+	}
+}
+
+@media screen and (max-width: 850px) {
+
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 640px) {
+
+}
 

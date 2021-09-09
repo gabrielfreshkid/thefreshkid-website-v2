@@ -173,6 +173,7 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
+		height: 130vh;
 	}
 
 	.boardTextContainer3 {

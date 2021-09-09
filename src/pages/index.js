@@ -20,7 +20,7 @@ function IndexPage({ data }) {
     <div className="page-container">
       <div className="content-wrap">  
         <Header></Header>
-        <FeatureBar></FeatureBar>
+        {/* <FeatureBar></FeatureBar> */}
         <HeroImage/>
 
         

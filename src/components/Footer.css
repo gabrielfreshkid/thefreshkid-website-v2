@@ -169,18 +169,18 @@
 
 .footerImage {
   position: relative;
-  width: 75%;
-  height: 75%;
+  width: 250px;
+  height: auto;
   margin-left: 12%;
   z-index: 3;
 }
 
 .footerPhotoBackDrop {
   position: absolute;
-  width: 75%;
-  height: 18.25vw;
+  width: 250px;
+  height: 255px;
   object-fit: cover;
-  margin-left: 12%;
+  margin-left: 40px;
   z-index: 0;
   transform: translateX(-110%) translateY(4%);
 }
@@ -203,5 +203,30 @@
   to {
     opacity: 1;
   }
+
+}
+
+@media screen and (max-width: 1020px) {
+	.footer-bar {
+    background: rgb(138, 138, 30);
+    height: 750px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    animation: fadeIn 5s;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+	
+}
+
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 640px) {
 
 }
