@@ -29,19 +29,19 @@ function Header() {
     )
 }
 
-const navSlide = () => {
+// const navSlide = () => {
 
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.navMenu-items');
-    const navItems = document.querySelector('.navItem')
-    if (burger) {
-        burger.addEventListener('click', ()=> {
-            nav.classList.toggle('nav-active');
-            navItems.classList.toggle('navItem-active');
-            console.log("HELP ME PLS");
-        })
-    }
-}
+//     const burger = document.querySelector('.burger');
+//     const nav = document.querySelector('.navMenu-items');
+//     const navItems = document.querySelector('.navItem')
+//     if (burger) {
+//         burger.addEventListener('click', ()=> {
+//             nav.classList.toggle('nav-active');
+//             navItems.classList.toggle('navItem-active');
+//             console.log("HELP ME PLS");
+//         })
+//     }
+// }
 
 export default Header;
-navSlide();
+// navSlide();
