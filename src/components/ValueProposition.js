@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import "./ValueProposition.css"
+import "./Fonts.css"
 
 export default function ValueProposition() {
   const data = useStaticQuery(graphql`
@@ -72,6 +73,7 @@ export default function ValueProposition() {
       <div className="valueProposition3">
         <div className="valuePropImage">
           <img
+            className="propImage"
             alt={``}
             key={``} 
             src={data.allContentfulDisplayBar.edges[0].node.referenceField3.icon.file.url}

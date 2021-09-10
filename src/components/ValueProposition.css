@@ -1,68 +1,122 @@
 .valuePropositionDisplayBar {
+    position: relative;
     background-color: rgb(238,241,242);
-    height: 150px;
+    height: 130px;
     width: 100%;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-    /* overflow: hidden; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    padding-left: 3em;
+    padding-right: 3em;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .valueProposition1 {
-    grid-column: 1;
-    display: grid;
-    grid-template: 1fr / 1fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-
+    /* background-color: aqua; */
 }
 
 .valueProposition2 {
-    grid-column: 2;
-    display: grid;
-    grid-template: 1fr / 1fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    /* background-color: aqua; */
 }
 
 .valueProposition3 {
-    grid-column: 3;
-    display: grid;
-    grid-template: 1fr / 1fr 2fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    /* background-color: aqua; */
 }
 
 .valuePropImage {
-    max-width: 80%;
-    max-height: 80%;
-    width: 60%;
-    transform: translateX(70%);
-    grid-column: 1;
-    grid-row: 1;
+    height: 120px;
+    width: 120px;
 }
 
 .valuePropositionText {
     color: #525251;
     font-size: 24px;
-    grid-column: 2;
-    grid-row: 1;
-    /* max-width: 80%; */
-    transform: translateX(15%);
-    display: grid;
-    grid-template: 1fr 1fr / 1fr;
+    max-width: 95%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    /* background-color: skyblue; */
 }
 
 .valuePropositionTitle {
     color: #525251;
     font-size: 18px;
-    grid-column: 1;
-    grid-row: 1;
+    transform: translateY(40%);
 }
 
 .valuePropositionBody {
     color: #525251;
     font-size: 14px;
-    grid-column: 1;
-    grid-row: 2;
 }
 
+@media screen and (max-width: 1250px) {
+    .valuePropositionDisplayBar {  
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    
+    }
+
+    .valuePropositionTitle {
+        font-size: 16px;
+    }
+    
+    .valuePropositionBody {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .valuePropositionDisplayBar {  
+        height: 400px;
+        flex-direction: column;
+    }
+
+    .valueProposition1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .valueProposition2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+    
+    .valueProposition3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: aqua; */
+    }
+
+    .valuePropositionTitle {
+    }
+    
+    .valuePropositionBody {
+    }
+
+}
 
