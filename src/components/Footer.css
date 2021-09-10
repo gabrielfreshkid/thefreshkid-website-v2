@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  animation: fadeIn 5s;
+  /* animation: fadeIn 5s; */
 }
 
 .footer-bar-container {
@@ -208,13 +208,11 @@
 
 @media screen and (max-width: 1020px) {
 	.footer-bar {
-    background: rgb(138, 138, 30);
     height: 750px;
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 999;
-    animation: fadeIn 5s;
   }
 }
 
